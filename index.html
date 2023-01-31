@@ -12,11 +12,71 @@
 </head>
 
 <body>
-  
+  <div class="wrapper">
+  <div id="imgHolder" class="imgHolder">
+    <img src="/img/white.jpeg" alt="white car">
+    <div class="model-summary">
+      <div class="model-name">Taycan Turbo Sport Turismo</div>
+      <div class="model-specs" id="modelSpacs">460кВт - PSCB Sport</div>
+      <div class="model-price" id="modelPrice"></div>
+      <div class="model-price" id="modelPriceUSD"></div>
+      <div class="button">Заказать</div>
+    </div>
+  </div>
+  <form id="autoForm">
+    <h2>Настрой авто для себя</h2>
+    <div class="row">
+      <div class="col-1-of-3">
+        <h4>Силовая установка</h4>
+        <div class="rorm-block">
+          <input type="radio" name="engine" id="engine300" value="624900" checked>
+          <label for="engine300">300кВт</label>
+        </div>
+        <div class="form-block">
+          <input type="radio" name="engine" id="engine460" value="749900">
+          <label for="engine460">460кВт</label>
+        </div>
+      </div>
+      <div class="col-1-of-3">
+        <h4>Тормозная система</h4>
+        <div class="form-block">
+          <input type="radio" nbame="rakesystem" id="brakesystemPSCB" value="0" checked>
+          <label for="brakesystemPSCB">PSCB - суппорт черного цвета</label>
+        </div>
+        <div class="form-block">
+          <input type="radio"nbame="rakesystem" id="brakesystemPCCB" value="125000">
+          <label for="brakesystemPCCB">PCCB - суппорт желтого цвета</label>
+        </div>
+      </div>
+      <div class="col-1-of-3">
+        <h4>Пакет (дополнительные опции)</h4>
+        <div class="form-block">
+          <input type="radio" name="package" id="packageSport" value="0" checked>
+          <label for="packageSport">Sport</label>
+        </div>
+        <div class="form-block">
+          <input type="radio" name="package" id="packageSportDesign" value="85000">
+          <label for="packageSport">Sport Design</label>
+        </div>
+        <div class="form-block">
+          <input type="radio" name="package" id="packageSportChrono" value="130000">
+          <label for="packageSportChrono">Sport Chrono</label>
+        </div>
+      </div>
+    </div>
 
-
-
-
+    <h4>Цвет</h4>
+    <div class="form-block">
+      <div class="colorsSelector" id="colorsSelector">
+        <div class="colorItem colorBlue" data-img-path="img/blue.jpeg"></div>
+        <div class="colorItem colorBlack" data-img-path="img/black.jpeg"></div>
+        <div class="colorItem colorGreen" data-img-path="img/green.jpeg"></div>
+        <div class="colorItem colorRad" data-img-path="img/rad.jpeg"></div>
+        <div class="colorItem colorWhite" data-img-path="img/white.jpeg"></div>
+      </div>
+    </div>
+  </form>
+</div>
   <script src="/libs/jquery 3.6.3.js"></script>
   <script src="/main.js"></script>
 </body>
