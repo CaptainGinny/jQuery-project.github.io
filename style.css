@@ -35,14 +35,11 @@ h6 {
 .wrapper {
    min-height: 100%;
    margin: 0 auto;
-   display:flex;
-   flex-direction:column;
-   height: 300px;
    z-index: 1;
 }
 
 .imgHolder img{
-   position: absolute;
+   position: fixed;
    width: 100%;
    height: 100%;
    top: 0;
@@ -51,24 +48,75 @@ h6 {
    z-index: -1;
 }
 
-.model-summary{
+.model-summary {
+   width: auto;
+   height: 200px;
    display: flex;
    flex-direction: column;
-   
-
+   margin-left: 80%;
+   background-color: #ffff;
+   opacity: 0.8;
    border: 1px solid black;
+   padding: 20px 20px;
+   font-size: 30px;
+   text-align: center;
 }
 
-#autoForm{
+.col-1-of-3{
    display: flex;
+   align-items: flex-start;
 }
 
-
+#autoForm {
+   margin-top: 25%;
+   font-size: 28px;
+}
 .model-name{}
 .model-specs{}
 .model-price{}
 .button{}
 
-#autoForm {
-   
+.colorsSelector {
+   display: flex;
+   align-items: flex-start;
+}
+
+.colorBlue {
+   background-color: rgb(0, 25, 75);
+   border-radius: 50%;
+   width: 3.75rem;
+   height: 3.75rem;
+   display: block;
+}
+
+.colorBlack {
+   background-color: rgb(0, 0, 0);
+   border-radius: 50%;
+   width: 3.75rem;
+   height: 3.75rem;
+   display: block;
+}
+
+.colorGreen{
+   background-color: rgb(64, 136, 72);
+   border-radius: 50%;
+   width: 3.75rem;
+   height: 3.75rem;
+   display: block;
+}
+
+.colorRad{
+   background-color: rgb(153, 0, 51);
+   border-radius: 50%;
+   width: 3.75rem;
+   height: 3.75rem;
+   display: block;
+}
+
+.colorWhite{
+   background-color: rgb(239, 245, 249);
+   border-radius: 50%;
+   width: 3.75rem;
+   height: 3.75rem;
+   display: block;
 }
