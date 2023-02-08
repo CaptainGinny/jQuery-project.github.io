@@ -15,7 +15,7 @@ $(document).ready(function() {
   calculatePrice();
   compileSpecs(); 
 
-  $('#colorsSelector .colorItem').on('click', function(){
+  $('#colorsSelector .colorItem').on('click', function() {
     let imgPath;
     imgPath = $(this).attr('data-img-path');
     $('#imgHolder img').attr('src', imgPath);
@@ -35,7 +35,7 @@ $(document).ready(function() {
     modelPriceHolder.text( modelPrice + ' рублей');
   };
 
-  function compileSpecs(){
+  function compileSpecs() {
     modelSpecs = $('input[name=engine]:checked + label', '#autoForm').text();
     modelSpecs = modelSpecs + ', ' + $('input[name=rakesystem]:checked + label', '#autoForm').text();
     modelSpecs = modelSpecs + ', ' + $('input[name=package]:checked + label', '#autoForm').text();
@@ -63,7 +63,7 @@ $(document).ready(function() {
   $.ajax ({
     url: currencyUrl,
     cache: false,
-    success: function(html){
+    success: function(html) {
       rurUsdRate = html.Cur_OfficialRate;
       calculateUSD();
     }
