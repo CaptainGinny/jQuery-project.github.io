@@ -31,8 +31,9 @@ h6 {
    font-size: inherit;
 }
 
+
 /*-------------------------------------------------------*/
-.wrapper {
+/* .wrapper {
    min-height: 100%;
    margin: 0 auto;
    z-index: 1;
@@ -74,7 +75,7 @@ h6 {
 .model-name{}
 .model-specs{}
 .model-price{}
-.button{}
+.button{} */
 
 .colorsSelector {
    display: flex;
@@ -119,4 +120,10 @@ h6 {
    width: 3.75rem;
    height: 3.75rem;
    display: block;
+}
+
+.main {
+   background-color: red;
+   width: 300px;
+   height: 300px;;
 }
