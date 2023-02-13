@@ -13,27 +13,28 @@
 
 <body>
   <div class="wrapper">
-  <div id="imgHolder" class="imgHolder">
-    <img src="/img/white.jpeg" alt="white car">
-    <div class="model-summary">
-      <div class="model-name">Taycan Turbo Sport Turismo</div>
-      <div class="model-specs" id="modelSpecs"></div>
-      <div class="model-price" id="modelPrice"></div>
-      <div class="model-price" id="modelPriceUSD"></div>
-      <div class="button">
-        <a href="#" class="wave-btn">
-          <span class="wave-btn__text">Заказать</span>
-          <span class="wave-btn__waves"></span>
-       </a>
+    <div id="imgHolder" class="imgHolder">
+      <div class="image _ibg">
+        <img src="/img/white.jpeg" alt="white car">
+      </div>
+      <div class="model-summary">
+        <div class="model-name">Taycan Turbo Sport Turismo</div>
+        <div class="model-specs" id="modelSpecs"></div>
+        <div class="model-price" id="modelPrice"></div>
+        <div class="model-price" id="modelPriceUSD"></div>
+        <div class="button">
+          <a href="#" class="wave-btn">
+            <span class="wave-btn__text">Заказать</span>
+            <span class="wave-btn__waves"></span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <form id="autoForm">
-    <h2>Настрой авто для себя</h2>
-    <div class="row">
+    <form id="autoForm" class="autoForm">
+      <h2>Настрой авто для себя</h2>
       <div class="col-1-of-3">
         <h4>Силовая установка</h4>
-        <div class="rorm-block">
+        <div class="form-block">
           <input type="radio" name="engine" id="engine300" value="624900" checked>
           <label for="engine300">300кВт</label>
         </div>
@@ -68,20 +69,19 @@
           <label for="packageSportChrono">Sport Chrono</label>
         </div>
       </div>
-    </div>
-
-    <h4>Цвет</h4>
-    <div class="form-block">
-      <div class="colorsSelector" id="colorsSelector">
-        <div class="colorItem colorBlue" data-img-path="img/blue.jpeg"></div>
-        <div class="colorItem colorBlack" data-img-path="img/black.jpeg"></div>
-        <div class="colorItem colorGreen" data-img-path="img/green.jpeg"></div>
-        <div class="colorItem colorRad" data-img-path="img/rad.jpeg"></div>
-        <div class="colorItem colorWhite" data-img-path="img/white.jpeg"></div>
+      
+      <h3>Цвет</h3>
+      <div class="form-block">
+        <div class="colorsSelector" id="colorsSelector">
+          <div class="colorItem colorBlue" data-img-path="img/blue.jpeg"></div>
+          <div class="colorItem colorBlack" data-img-path="img/black.jpeg"></div>
+          <div class="colorItem colorGreen" data-img-path="img/green.jpeg"></div>
+          <div class="colorItem colorRad" data-img-path="img/rad.jpeg"></div>
+          <div class="colorItem colorWhite" data-img-path="img/white.jpeg"></div>
+        </div>
       </div>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
   <script src="/libs/jquery 3.6.3.js"></script>
   <script src="/main.js"></script>
 </body>
