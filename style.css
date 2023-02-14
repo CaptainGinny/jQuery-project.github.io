@@ -34,8 +34,9 @@ html,
 body {
    font-family: Arial, Helvetica, sans-serif;
    height: 100%;
-   line-height: 1;
-   font-size: 16px;
+   line-height: normal;
+   font-size: 15px;
+   text-align: center;
    color: greenyellow; 
 }
 
@@ -77,14 +78,13 @@ body {
 /*-------------AUTOFORM----------------------------*/
 
 .autoForm {
-   padding: 420px 10px 10px 10px;
+   padding: 520px 10px 10px 10px;
    z-index: 5;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   font-size: 35px;
+   font-size: 27px;
 }
-
 
 .model-name {
 }
@@ -95,38 +95,37 @@ body {
 .button {
 }
 .form h3 {
-   display: flex;
-   align-items: baseline;
-   
-   background: #000;
+  
 }
 
 
 .col-1-of-3 {
    text-align: center;
+  
 }
 
 .col-1-of-3 h4 {
-   
+ 
 }
 
 
 .form-block {
-
+  
 }
 
 
 /*-------------Colours------------------*/
 
-.form-block-color {
-   display: flex;
-   align-items: 
-
+ .color-column {
+   position: relative;
+   top: 0px;
+   left: 180px;
 }
 
 .colorsSelector {
    display: flex;
    align-items: flex-start;
+   margin-top: 60px;
 }
 
 .colorBlue {
@@ -135,6 +134,7 @@ body {
    width: 3.75rem;
    height: 3.75rem;
    display: block;
+   margin-right: 4px;
 }
 
 .colorBlack {
@@ -143,6 +143,7 @@ body {
    width: 3.75rem;
    height: 3.75rem;
    display: block;
+   margin-right: 4px;
 }
 
 .colorGreen{
@@ -151,6 +152,7 @@ body {
    width: 3.75rem;
    height: 3.75rem;
    display: block;
+   margin-right: 4px;
 }
 
 .colorRad{
@@ -159,6 +161,7 @@ body {
    width: 3.75rem;
    height: 3.75rem;
    display: block;
+   margin-right: 4px;
 }
 
 .colorWhite{
