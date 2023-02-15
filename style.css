@@ -32,12 +32,12 @@ h6 {
 
 html,
 body {
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Montserrat;
    height: 100%;
    line-height: normal;
-   font-size: 15px;
+   font-size: 18px;
    text-align: center;
-   color: greenyellow; 
+   color: #000; 
 }
 
 .wrapper {
@@ -46,8 +46,9 @@ body {
    overflow: hidden;
    display: flex;
    flex-direction: column;
-}   
-
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+  
 ._ibg {
    position: relative;
 }  
@@ -72,54 +73,59 @@ body {
 .model-summary {
    position: relative;
    flex: 1 1 auto;
+   background-color: #fff;
+   opacity: 0.7;
 }
 
+.model-name {
+   font-size: 50px;
+}
+
+.model-specs {
+   font-size: 30px;
+}
+
+.model-price {
+   font-size: 35px;
+}
+
+.button {
+   position: absolute;
+   top: 50px;
+   left: 77%;
+}
 
 /*-------------AUTOFORM----------------------------*/
 
 .autoForm {
-   padding: 520px 10px 10px 10px;
+   padding: 32% 10px 10px 10px;
+   margin: 0px 10px 10px 20px;
    z-index: 5;
    display: flex;
+   justify-content: space-around;
    align-items: center;
-   justify-content: space-between;
-   font-size: 27px;
+   font-size: 23px;
+   color: #fff;
+   text-shadow: 0 0 5px #000;
 }
-
-.model-name {
-}
-.model-specs {
-}
-.model-price {
-}
-.button {
-}
-.form h3 {
-  
-}
-
 
 .col-1-of-3 {
    text-align: center;
-  
+   text-shadow: 0 0 10px #000;
+   padding-left: 20px;
 }
-
-.col-1-of-3 h4 {
- 
-}
-
 
 .form-block {
-  
+   padding: 5px 5px 3px 5px;
 }
-
-
 /*-------------Colours------------------*/
 
  .color-column {
    position: relative;
    top: 0px;
-   left: 180px;
+   left: 14%;
+   right: 18%;
+   margin-bottom: 70px;
 }
 
 .colorsSelector {
@@ -200,7 +206,7 @@ body {
 
 .wave-btn__text {
    font-family: Arial, Helvetica, sans-serif;
-   color: #fff;
+   color: #FFD700;
    text-transform: uppercase;
    letter-spacing: 3px;
    position: relative;
@@ -213,8 +219,8 @@ body {
    height: 280px;
    top: 0;
    left: 0;
-   background-color: #4973ff;
-   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+   background-color: #d9142b;
+   box-shadow: inset 0 0 50px rgba(250, 215, 0, 0.5);
 
    transition: all 0.8s ease 0s;
 }
