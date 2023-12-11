@@ -1,21 +1,20 @@
-$(document).ready(function() {
-
+$(document).ready(function () {
   let modelSpecs = '';
   let modelPrice = 0;
   let modelSpecsHolder = $('#modelSpecs');
   let modelPriceHolder = $('#modelPrice');
   let modelPriceUSDHolder = $('#modelPriceUSD');
 
-  $('#autoForm input').on('change', function() {
+  $('#autoForm input').on('change', function () {
     calculatePrice();
     compileSpecs();
     calculateUSD();
   });
 
   calculatePrice();
-  compileSpecs(); 
+  compileSpecs();
 
-  $('#colorsSelector .colorItem').on('click', function() {
+  $('#colorsSelector .colorItem').on('click', function () {
     let imgPath;
     imgPath = $(this).attr('data-img-path');
     $('#imgHolder img').attr('src', imgPath);
@@ -32,34 +31,34 @@ $(document).ready(function() {
 
     modelPrice = modelPriceEngine + modelPriceRakesystem + modelPricePackage;
 
-    modelPriceHolder.text( modelPrice + ' рублей');
-  };
+    modelPriceHolder.text(modelPrice + ' BYR');
+  }
 
   function compileSpecs() {
     modelSpecs = $('input[name=engine]:checked + label', '#autoForm').text();
-    modelSpecs = modelSpecs + ', ' + $('input[name=rakesystem]:checked + label', '#autoForm').text();
+    modelSpecs =
+      modelSpecs + ', ' + $('input[name=rakesystem]:checked + label', '#autoForm').text();
     modelSpecs = modelSpecs + ', ' + $('input[name=package]:checked + label', '#autoForm').text();
 
-    modelSpecsHolder.text( modelSpecs );
-  };
+    modelSpecsHolder.text(modelSpecs);
+  }
 
-//Получить курс валют
+  //Получить курс валют
 
-  let currencyUrl= 'https://www.nbrb.by/api/exrates/rates/431';
+  let currencyUrl = 'https://www.nbrb.by/api/exrates/rates/431';
   let rurUsdRate = 0;
 
-  $.ajax ({
+  $.ajax({
     url: currencyUrl,
     cache: false,
-    success: function(html) {
+    success: function (html) {
       rurUsdRate = html.Cur_OfficialRate;
       calculateUSD();
-    }
+    },
   });
 
   function calculateUSD() {
     let modelPriceUSD = modelPrice / rurUsdRate;
-    modelPriceUSDHolder.text( '$ ' + modelPriceUSD.toFixed(0));
+    modelPriceUSDHolder.text('$ ' + modelPriceUSD.toFixed(0) + ' USD');
   }
-
-}); 
+});
